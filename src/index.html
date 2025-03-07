@@ -17,10 +17,9 @@
     <header class="header">
       <div class="container">
         <div class="col-md-2 col-sm-3 col-xs-6">
-          <button class="burger">
-            <img src="assets/img/burger.svg" alt="burger" /><span
-              >Каталог товаров</span
-            >
+          <button class="burger" type="button">
+            <img src="assets/img/burger.svg" alt="burger" />
+            <span>Каталог товаров</span>
           </button>
           <ul class="burger-menu">
             <li>
@@ -76,7 +75,8 @@
         <div class="col-md-2 col-md-offset-0 col-sm-3 col-sm-offset-6 col-xs-6">
           <div class="button-wrap">
             <button class="button button-order button-design">
-              Заказать<img
+              Заказать
+              <img
                 class="button-order-img"
                 src="assets/img/button-right-arrow.svg"
                 alt="button-right-arrow"
@@ -99,7 +99,7 @@
             <div class="file_upload">
               <button type="button">Загрузить фотографию</button>
               <div>Файл не выбран</div>
-              <input type="file" name="upload" />
+              <input name="upload" type="file" />
             </div>
             <p class="email">
               E-mail: <a href="mailto:info@kartiny.art">info@kartiny.art</a>
@@ -112,11 +112,8 @@
                 class="icons"
                 src="assets/img/telephone.svg"
                 alt="telephone"
-              /><img
-                class="icons"
-                src="assets/img/whatsapp.svg"
-                alt="whatsapp"
               />
+              <img class="icons" src="assets/img/whatsapp.svg" alt="whatsapp" />
               +7 495 234-23-34
             </p>
           </div>
@@ -300,7 +297,7 @@
               <div class="file_upload">
                 <button type="button">Загрузить фотографию</button>
                 <div>Файл не выбран</div>
-                <input type="file" name="upload" />
+                <input name="upload" type="file" />
               </div>
               <select id="size">
                 <option>Выберите размер картины</option>
@@ -334,9 +331,9 @@
                 <option>Доставка готовых работ</option>
               </select>
               <input
-                type="text"
                 class="promocode"
                 placeholder="Введите ваш промокод"
+                type="text"
               />
               <div class="calc-price">
                 Для расчета нужно выбрать размер картины и материал картины
@@ -832,20 +829,20 @@
         <div class="col-md-10 col-md-offset-1">
           <form action="#" method="POST">
             <div class="input-wrapper">
-              <input type="text" name="name" placeholder="Ваше имя" required />
+              <input name="name" placeholder="Ваше имя" required type="text" />
               <input
-                type="text"
                 name="phone"
                 placeholder="Ваш телефон"
                 required
+                type="text"
               />
-              <input type="text" name="email" placeholder="Ваш E-mail" />
+              <input name="email" placeholder="Ваш E-mail" type="text" />
               <input
                 class="input-text"
                 name="message"
-                type="text"
                 placeholder="Задайте ваш вопрос здесь"
                 required
+                type="text"
               />
             </div>
             <button class="button button-order">Получить консультацию</button>
@@ -913,12 +910,20 @@
           <h4>Остались вопросы? Закажите обратный звонок</h4>
           <div class="main-form">
             <form class="form" action="#" method="POST">
-              <input type="text" name="name" placeholder="Ваше имя" required />
+              <input name="name" placeholder="Ваше имя" required type="text" />
               <input
-                type="text"
                 name="phone"
                 placeholder="Ваш телефон"
                 required
+                type="text"
+              />
+              <input name="email" placeholder="Ваш E-mail" type="text" />
+              <input
+                class="input-text"
+                name="message"
+                placeholder="Задайте ваш вопрос здесь"
+                required
+                type="text"
               />
               <button class="button button-order">Получить консультацию</button>
             </form>
@@ -948,27 +953,19 @@
             <div class="file_upload">
               <button type="button">Загрузить фотографию</button>
               <div>Файл не выбран</div>
-              <input type="file" name="upload" />
+              <input name="upload" type="file" />
             </div>
             <div class="main-form">
               <div class="form">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Ваше имя"
-                  required
-                />
-                <input
-                  type="text"
-                  name="phone"
-                  placeholder="Ваш телефон"
-                  required
-                />
-                <input type="text" name="email" placeholder="Ваш e-mail" />
+                <input name="name" placeholder="Ваше имя" required />
+                <input name="phone" placeholder="Ваш телефон" required />
+                <input name="email" placeholder="Ваш e-mail" type="text" />
                 <textarea
                   name="message"
                   placeholder="Комментарий"
                   rows="2"
+                  required
+                  type="text"
                 ></textarea>
                 <button class="button button-order">Отправить дизайнеру</button>
               </div>
